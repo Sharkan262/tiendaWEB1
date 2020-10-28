@@ -1,6 +1,123 @@
-.navbar ul li{
-    font-family: 'Audiowide', cursive;
-    list-style: none;
-    display: block;
-    width: auto;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
 }
+header{
+    text-align: center;
+    font-size: 10vh;
+    font-family: 'Audiowide';
+    background-color: #0805be;
+    margin: 1vh;
+    color: #f2f2f2;
+}
+
+nav{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background: #0805be;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: auto;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: rgb(255, 255, 255);
+}
+
+.slider{
+    max-width: 50%;
+    max-height: 50vh;
+    width: 50%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+.miSlider{
+    width: 100%;
+    max-height: 50vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+    transition: 2s;
+}
+.direcciones{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.direcciones a{
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+
+}
+.direcciones a:hover{
+    background: rgba(0,0,0, .5);
+    transition: .5s;
+}
+.miSlider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.barras{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.barra{
+    cursor: pointer;
+    height: 2px;
+    width: 25px;
+    margin: 0 2px;
+    background: #dcdde1;
+    display: inline-block;
+    margin-left: 3px;
+}
+.active{
+    background-color: #0805bebb;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+        from{opacity: .4;}
+        to{opacity: 1;}
+    }
+
+@media only screen and (max-width: 400px)

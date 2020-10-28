@@ -10,16 +10,52 @@
     <title>Tecno Store</title>
 </head>
 <body>
-    <div class="Contenedor">
-        <div class="navbar">
-            <ul>
-                <li>Tecno Store</li>
-                <li>nombre</li>
-                <li>casa</li>
-                <li>perro</li>
-                <li>carro</li>
-            </ul>
+    <header>Tecno Store</header>
+    <nav>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Catálogo</a> </li>
+            <li><a href="">Contáctanos</a></li>
+            <li><a href="">Sesión</a></li>
+        </ul>
+    </nav>
+    <div class="slider">
+        <div class="miSlider fade">
+            <img src="Images/img1.jpg" alt="">
+        </div>
+        <div class="miSlider fade">
+            <img src="Images/img2.jpg" alt="">
+        </div>
+        <div class="miSlider fade">
+            <img src="Images/img3.jpg" alt="">
+        </div>
+        <div class="miSlider fade">
+            <img src="Images/img4.jpg" alt="">
+        </div>
+        <div class="miSlider fade">
+            <img src="Images/img5.jpg" alt="">
+        </div>
+        <div class="miSlider fade">
+            <img src="Images/img6.jpg" alt="">
+        </div>
+        <div class="miSlider fade">
+            <img src="Images/img7.jpg" alt="">
+        </div>
+        <div class="direcciones">
+            <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+            <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+        </div>
+        <div class="barras">
+            <span class="barra active" onclick="posicionSlide(1)"></span>
+            <span class="barra" onclick="posicionSlide(2)"></span>
+            <span class="barra" onclick="posicionSlide(3)"></span>
+            <span class="barra" onclick="posicionSlide(4)"></span>
+            <span class="barra" onclick="posicionSlide(5)"></span>
+            <span class="barra" onclick="posicionSlide(6)"></span>
+            <span class="barra" onclick="posicionSlide(7)"></span>
         </div>
     </div>
+
+    <script src="Js/main.js"></script>
 </body>
 </html>
