@@ -11,14 +11,20 @@
 </head>
 <body>
     <header>Tecno Store</header>
-    <nav>
-        <ul>
+    <nav class="menu">
+        <div>
+            <label for="">&#x2630;</label>
+        </div>
+        <ul> 
+            <input type="checkbox" name="desplegar" id="desplegar"> 
             <li><a href="">Inicio</a></li>
             <li><a href="">Catálogo</a> </li>
             <li><a href="">Contáctanos</a></li>
             <li><a href="">Sesión</a></li>
         </ul>
     </nav>
+    
+    
     <div class="slider">
         <div class="miSlider fade">
             <img src="Images/img1.jpg" alt="">
