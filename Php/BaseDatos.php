@@ -69,9 +69,44 @@ public function buscarDatos($consultaSQL){
 
 
 }
+public function eliminarProducto($consultaSQL){
+    //1. Conectarme a la BD
+    $conexionBD=$this->conectarBD();
 
+    //2. Preparar la consulta
+    $consultaEliminarProducto= $conexionBD->prepare($consultaSQL);
 
+    //3. Ejecutar la consulta
+    $resultado=$consultaEliminarProducto->execute();
 
+    //4. verifique el resultado
+    if($resultado){
+        echo("Registro eliminado con éxito");
+    }else{
+        echo("Error eliminando el registro");
+    }
+
+}
+
+public function editarDatos($consultaSQL){
+
+    //1. Conectarme a la BD
+    $conexionBD=$this->conectarBD();
+
+    //2. Preparar la consulta
+    $consultaEditarDatos= $conexionBD->prepare($consultaSQL);
+
+    //3. Ejecutar la consulta
+    $resultado=$consultaEditarDatos->execute();
+
+    //4. verifique el resultado
+    if($resultado){
+        echo("Registro editado con éxito");
+    }else{
+        echo("Error editando el registro");
+    }
+
+}
 
 }
 

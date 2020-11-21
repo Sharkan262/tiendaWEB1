@@ -21,6 +21,8 @@
         //4.LLamar al metodo agregarDatos     
         $transaccion->agregarDatos($consultaSQL);
 
+        header("location:../form_inventario.php");
+
         
         
 
