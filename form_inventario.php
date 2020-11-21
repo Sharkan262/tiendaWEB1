@@ -28,14 +28,14 @@
         <form action="Php/registrarProductos.php" method="POST">
             <div class="form-group">
                 <label >Nombre Del Producto:</label>
-                <input type="email" class="form-control" name="nombreProducto" id="nombreProducto">
+                <input type="text" class="form-control" name="nombreProducto" id="nombreProducto">
             </div>
             <div class="form-group">
                 <label >Marca Del Producto:</label>
-                <input type="email" class="form-control"  name="marcaProducto" id="marcaProducto">
+                <input type="text" class="form-control"  name="marcaProducto" id="marcaProducto">
             </div>
             <div class="form-group">
-                <label >Marca Del Producto:</label>
+                <label >Precio Del Producto:</label>
                 <input type="number" class="form-control"  name="precioProducto" id="precioProducto">
             </div>
             <div class="form-group">
